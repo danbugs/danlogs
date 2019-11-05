@@ -18,7 +18,7 @@ Before we discuss what is ownership, let's talk about
 <br/>
 - Access time:
   - Pushing to stack is faster than allocating to the heap (i.e. no need to search for empty spot).   
-  - Accessing data on the stack is slower than accessing data on the heap (i.e. no need to follow a pointer).
+  - Accessing data on the stack is faster than accessing data on the heap (i.e. no need to follow a pointer).
 <br/>
 - When we call a function, the values passed into the function and the function's local variables get pushed onto the stack, when done they get popped off.
 
@@ -133,7 +133,7 @@ fn main(){
 } // i is popped off stack
 
 fn foo_string(s1 : String){ // s1 comes into scope
-  println!("{}", s);
+  println!("{}", s1);
 } // rust calls drop and heap of s1 is cleaned
 
 fn foo_int(i1 : i32){ // i1 comes into scope
