@@ -1,19 +1,21 @@
 fn main() {
-    // let r = dangle();
-    let mut s = "ok";
-    println!("{}", s);
-    s = "ok2";
-    println!("{}", s);
+    let mut s1 = String::from("ok1");
+    // Rule #1
+    // let r1 = &mut s1;
+    // let r2 = &mut s1;
+
+    // println!("{} {}", r1, r2);
+ 
+    // Rule #2
+    let r1 = &s1;
+    let r2 = &mut s1;
+    println!("{} {}", r1, r2);
+
+    // Dangling References
+    let r = dangle();
 }
 
-// fn dangle() -> &String{
-//     let s = String::from("ok");
-//     &s 
-//     /*
-//     returns a reference to a
-//     value that is about to be dropped
-//     a line earlier (i.e. reference
-//     will point to something completely
-//     unrelated).
-//     */
-// }
+fn dangle() -> &String{
+    let s = String::from("ok");
+    &s
+}
