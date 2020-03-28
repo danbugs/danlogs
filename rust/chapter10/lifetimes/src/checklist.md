@@ -1,0 +1,10 @@
+- [ ] Lifetimes in the wild.
+- [ ] Let's see the problem.
+- [ ] Lifetimes' Syntax.
+- [ ] Let's see the solution.
+- [ ] Lifetime Elision.
+- [ ] Lifetimes in structs.
+- [ ] You want more lifetimes?
+  - [ ] Lifetime annotations in `impl`.
+  - [ ] `'static` lifetime.
+- [ ] Let's put it all together.
