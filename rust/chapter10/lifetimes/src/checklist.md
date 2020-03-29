@@ -1,10 +1,10 @@
-- [ ] Lifetimes in the wild.
-- [ ] Let's see the problem.
-- [ ] Lifetimes' Syntax.
-- [ ] Let's see the solution.
-- [ ] Lifetime Elision.
-- [ ] Lifetimes in structs.
-- [ ] You want more lifetimes?
-  - [ ] Lifetime annotations in `impl`.
-  - [ ] `'static` lifetime.
-- [ ] Let's put it all together.
+- [x] Lifetimes in the wild.
+- [x] Let's see the problem.
+- [x] Lifetimes' Syntax.
+- [x] Let's see the solution.
+- [x] Lifetime Elision.
+- [x] Lifetimes in structs.
+- [x] You want more lifetimes?
+  - [x] Lifetime annotations in `impl`.
+  - [x] `'static` lifetime.
+- [x] Let's put it all together.
