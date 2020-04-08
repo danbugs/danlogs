@@ -6,5 +6,5 @@ mod common;
 #[test]
 fn test_print_stuff_again_again() {
     common::setup();
-    testing::print_stuff()
+    testing::print_stuff();
 }
