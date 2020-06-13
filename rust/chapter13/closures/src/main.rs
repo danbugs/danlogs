@@ -7,11 +7,9 @@ fn main() {
     // println!("{:?}", ok()); ERROR!
 
     let x1 = 1;
-    let ok1 = || { // Fn
-        x1 + 2
-    };
-    println!("{:?}", ok1());
-    println!("{:?}", x1);
+    let ok1 = || &x1 + 1; // Fn
+    println!("{:?}" , ok1());
+    println!("{:?}" , x1);
 
     let mut x2 = 1;
     let mut ok2 = || { // FnMut
