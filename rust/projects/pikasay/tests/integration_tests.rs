@@ -7,8 +7,8 @@ fn run_with_defaults() -> Result<(), Box<dyn std::error::Error>> {
     Command::cargo_bin("pikasay")
         .expect("binary exists")
         .assert()
-        .success()
-        .stdout(predicate::str::contains("Created by danlogs!"));
+        .stdout(predicate::str::contains("Created by danlogs!"))
+        .success();
     
     Ok(())
 }
