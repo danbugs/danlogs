@@ -91,9 +91,9 @@ fn print_message(message : String) {
     if message.to_lowercase().contains("raichu") {
         eprintln!("Pikachu hasn't evolved yet...");
     } else {
-        println!(" {:-<1$}", "", message.chars().count() + 2);
+        println!(" {}", "-".repeat(message.chars().count() + 2));
         println!("| {} |", message);
-        println!(" {:-<1$}", "", message.chars().count() + 2);
+        println!(" {}", "-".repeat(message.chars().count() + 2));
         println!("  \\  /");
         println!("   \\/");
     }
