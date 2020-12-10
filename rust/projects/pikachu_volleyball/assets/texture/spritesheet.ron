@@ -1,0 +1,18 @@
+List((
+    texture_width: 476,
+    texture_height: 885,
+    sprites: [
+        ( // pikachu
+            x: 2, 
+            y: 266,
+            width: 64,
+            height: 64,
+        ),
+        ( // ball
+            x: 88,
+            y: 158,
+            width: 40,
+            height: 40,
+        ),
+    ]
+))
