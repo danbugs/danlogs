@@ -10,6 +10,6 @@ At the root level, you should see two folders:
 
 Inside these two folders, you will find other folders named in accordance to the YouTube playlists.
 
-![](https://i.imgur.com/RbVZBJ9.png)
+![](https://i.imgur.com/gziuVJV.png)
 
 Enjoy! 🦀🕸
