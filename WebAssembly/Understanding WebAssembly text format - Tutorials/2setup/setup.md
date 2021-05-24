@@ -57,18 +57,27 @@ Here I'll explain how to setup your workflow for **macOS** and (most of) **Windo
 > There's probably a better way to do this but it works 🤷‍♂️
 
 **Step 7)** Choose the generator you'd like, I choose the latest and run: `cmake .. -DCMAKE_BUILD_TYPE=DEBUG -DCMAKE_INSTALL_PREFIX=..\ -G "Visual Studio 16 2019"`
+
 **Step 8)** After the previous command finishes, run: `cmake --build . --config DEBUG --target install`.
 
 ⚠ *Note*:  After this point, we'll be editing your computer's environment variables. If you don't feel confident doing this, I recommend you don't. If you delete environment variables or overwrite something, it can be a pain to fix and it will most probably hurt the functionality of other programs in your computer. If you prefer to not add the wabt binaries to your path, you can still use them by directly referencing the path of the folder where they're at (for example, if they are in your Downloads folder, you can do: `~\Downloads\wabt\bin\wat2wasm --help` to use thw wat2wasm binary).
 
 **Step 9)** To finish up, let's add the generated executables to the path. For convenience, I copied the wabt folder to `C:\`. In the terminal, run `cd C:\ | explorer .` and copy and paste the wabt folder there. 
-Step 10) In the search bar at the bottom left corner search for "Environment Variables", open the following item:
+
+**Step 10)** In the search bar at the bottom left corner search for "Environment Variables", open the following item:
+
 ![img](https://i.imgur.com/u1wmlon.png)
+
 **Step 11)** Click on the "Environment Variables..." button at the bottom right corner of the system's properties window:
+
 ![img](https://i.imgur.com/2nw66Av.png)
+
 **Step 12)** You should see a window titled "Environment Variables" with two sections: "User variables for <your-user-name>" and "System variables". In "System variables" look for a variable called "Path" and select it. After selecting the variables (by clicking on it), hit "Edit..." under the "System variables" section.
+
 **Step 13)** You should now see a window titled "Edit environment variable". Click the button titled "New" on the top right side and insert "C:\wabt\bin" (or whatever different path you chose for your `wabt` folder) in the focused input text field.
+
 **Step 13)** Open a new terminal window and run: `wat2wasm --help`. You should see something like this:
+
 ![img](https://i.imgur.com/phROlYs.png)
 
 ---
