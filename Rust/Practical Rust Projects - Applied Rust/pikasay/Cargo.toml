@@ -1,11 +1,11 @@
 [package]
 name = "pikasay"
-version = "0.1.0"
+version = "0.2.0"
 authors = ["Dan Chiarlone"]
 edition = "2018"
 description = "This is an homage to revered `cowsay` with a 'poke-twist'"
 readme = "README.md"
-repository = "https://github.com/danbugs/danlogs/tree/master/rust/projects/pikasay"
+repository = "https://github.com/danbugs/danlogs/tree/master/Rust/Practical%20Rust%20Projects%20-%20Applied%20Rust/pikasay"
 license = "MIT OR Apache-2.0"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
