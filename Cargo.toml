@@ -41,4 +41,5 @@ members = [
   "Rust/The Rust Programming Language - Tutorials/chapter16/message-passing",
   "Rust/The Rust Programming Language - Tutorials/chapter16/mutex-and-arc",
   "Rust/The Rust Programming Language - Tutorials/chapter16/send-sync",
+  "Rust/The Rust Programming Language - Tutorials/chapter18/patterns",
 ]
