@@ -1,64 +1,3 @@
-trait A<T = i32> {
-    fn method(_: T);
-}
-
-struct MyStruct;
-
-impl A for MyStruct {
-    fn method(_: i32) {
-        println!("This is A.");
-    }
-}
-
-impl A<f64> for MyStruct {
-    fn method(_: f64) {
-        println!("This is A<f64>.");
-    }
-}
-
-fn main() {
-    <MyStruct as A>::method(1);
-    <MyStruct as A<f64>>::method(1.0);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // trait A {
 //     fn method();
 // }
@@ -71,17 +10,62 @@ fn main() {
 
 // impl A for MyStruct {
 //     fn method() {
-//         println!("This is A.");
+//         println!("This is A.");    
 //     }
 // }
 
 // impl B for MyStruct {
 //     fn method() {
-//         println!("This is B.");
+//         println!("This is B.");    
 //     }
 // }
 
 // fn main() {
+//     // <>::
+//     // ::<>
 //     <MyStruct as A>::method();
 //     <MyStruct as B>::method();
 // }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+trait A<T = i32> {
+    fn method(_: T);    
+}
+
+struct MyStruct;
+
+impl A for MyStruct {
+    fn method(_: i32) {
+        println!("This is A.");    
+    }
+}
+
+impl A<f64> for MyStruct {
+    fn method(_: f64) {
+        println!("This is A<f64>.");    
+    }
+}
+
+fn main() {
+    MyStruct::method(1);    
+    MyStruct::method(1.0);
+}
